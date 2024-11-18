@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeForAll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="src/Anime_Logo-removebg-preview.png" alt="AnimeForAll Logo" class="logo">
+            <h1 class="site-name">AnimeForAll</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Search for movies...">
+        <button type="button" onclick="search()" class="search-btn">Search</button>
+    </div>
+    <div class="filter-container">
+        <select id="sortOptions" class="filter-select" onchange="sortAndfilter()">
+            <option value="">Sort Random</option>
+            <option value="title">Sort by Title</option>
+            <option value="score">Sort by Rating</option>
+            <option value="start_date">Sort by Release Date</option>
+        </select>
+        <select id="genreOptions" class="filter-select" onchange="sortAndfilter()">
+            <option value="">All Genres</option>
+            <option value="1">Action</option>
+            <option value="8">Drama</option>
+            <option value="4">Comedy</option>
+            <option value="22">Romance</option>
+            <option value="14">Horror</option>
+        </select>
+    </div>
+    
+    
+
+ <div id="pages">    
+
+    <div id="load"></div>
+   <div id="budy"></div>
+  
+
+   <div class="button-container">
+       <button onclick="browse(1)" class="backBtn">back</button>
+       <button onclick="browse(2)"class="nextBtn">next</button>
+   </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
